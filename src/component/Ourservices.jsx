@@ -68,7 +68,7 @@ const Ourservices = () => {
         <div className='container mt-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3 className='doticon my-4'>Our Services</h3>
+                    <h3 data-aos="zoom-in" className='doticon my-4'>Our Services</h3>
                 </div>
                 <div className='py-3'>
                     <Slider {...settings}>

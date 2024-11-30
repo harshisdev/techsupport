@@ -28,15 +28,15 @@ const Techindex = () => {
         <div className='container py-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3 className='doticon mb-4'>Technology Index</h3>
+                    <h3  data-aos="zoom-in" className='doticon mb-4'>Technology Index</h3>
                 </div>
             </div>
             <div className="row mt-4">
                 <div className="col-6">
-                    <img style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={TechBanner} alt="Technology Index" />
+                    <img data-aos="fade-right" style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={TechBanner} alt="Technology Index" />
                 </div>
                 <div className="col-6 align-items-center d-flex">
-                    <div>
+                    <div data-aos="fade-left">
                         <h2 className='fs-4 mb-4'>We Are Always Best For Technology Solution</h2>
                         <div className='wearealways'>
                             <div className='rounded text-bg-light me-3 d-flex align-items-center justify-content-center' style={{ width: '50px', height: '50px' }}>

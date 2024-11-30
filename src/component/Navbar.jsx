@@ -38,16 +38,16 @@ const Navbar = () => {
             <div className="position-absolute w-100 z-2 border-bottom">
                 <nav className='container py-2'>
                     <div className="row align-items-center">
-                        <div className="col-1 text-white fs-custom">
+                        <div data-aos="zoom-in" className="col-1 text-white fs-custom">
                             <CiClock2 /> 24/7
                         </div>
-                        <div className="col-2 text-white text-center fs-custom">
+                        <div data-aos="zoom-in" className="col-2 text-white text-center fs-custom">
                             <Link className='text-decoration-none text-white' to="mailto:abc@gmail.com"><IoMailUnreadOutline /> abc@gmail.com</Link>
                         </div>
-                        <div className="col-3 text-white fs-custom">
+                        <div data-aos="zoom-in" className="col-3 text-white fs-custom">
                             <SlLocationPin /> New Delhi, Noida, Gurgaon
                         </div>
-                        <div className="col-6 d-flex justify-content-end">
+                        <div data-aos="fade-left" className="col-6 d-flex justify-content-end">
                             <Link className='text-white fs-5' to="" target="_blank"><CiFacebook /></Link>
                             <Link className='text-white fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
                             </Link>

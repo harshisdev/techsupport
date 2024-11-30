@@ -2,6 +2,7 @@ import React from 'react'
 import OurTeam from '../assets/images/tech-man.webp'
 import Slider from 'react-slick'
 import { CiFacebook } from 'react-icons/ci'
+import { Link } from 'react-router-dom'
 
 const Ourteam = () => {
     const ourTeam = [
@@ -43,7 +44,7 @@ const Ourteam = () => {
         <div className='container pb-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3 className='doticon mb-4'>Meet our team of experts</h3>
+                    <h3  data-aos="zoom-in" className='doticon mb-4'>Meet our team of experts</h3>
                 </div>
             </div>
             <div className='mt-4'>
@@ -57,19 +58,19 @@ const Ourteam = () => {
                                             <img src={item.img} className="card-img-top rounded transform-none" alt={item.name} />
                                             <div className="card-body text-center">
                                                 <div className='card-title d-flex justify-content-between'>
-                                                    <a href="#" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
-                                                    </a>
-                                                    <a href="#" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
-                                                    </a>
-                                                    <a href="#" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
-                                                    </a>
-                                                    <a href="#" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
-                                                    </a>
+                                                    <Link data-aos="fade-left" to="" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
+                                                    </Link>
+                                                    <Link data-aos="zoom-in"  to="" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
+                                                    </Link>
+                                                    <Link data-aos="zoom-in"  to="" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
+                                                    </Link>
+                                                    <Link data-aos="fade-right"  to="" className='text-bg-light rounded-pill d-flex align-items-center justify-content-center' style={{ width: '40px', height: '40px' }}><CiFacebook />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='pt-3 text-center'>
+                                    <div  data-aos="zoom-in" className='pt-3 text-center'>
                                         <h5 className="card-title">{item.name}</h5>
                                         <p className="card-text">{item.designation}</p>
                                     </div>

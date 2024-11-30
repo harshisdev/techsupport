@@ -22,20 +22,20 @@ const Home = () => {
             <div className='container'>
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">
-                        <h3 className='doticon mb-3'>Who We bring</h3>
+                        <h3 data-aos="zoom-in" className='doticon mb-3'>Who We bring</h3>
                     </div>
                 </div>
                 <div className="row mt-4">
-                    <div className="col-6">
+                    <div className="col-6" data-aos="fade-right">
                         <h5 className='mb-0'>Exclusive Technology to Provide IT Solutions & Services</h5>
                         <p className='border-bottom py-4 mb-0'>We have over 20+ years of experience in all stages of software design, development, maintenance, and support.</p>
-                        <ul className='mt-4 m-0 px-3 d-flex'>
+                        <ul className='mt-4 m-0 px-3 d-flex' data-aos="zoom-in">
                             <li className='w-50'>IT Professional services
                             </li>
                             <li className='w-50'>IT Professional services
                             </li>
                         </ul>
-                        <ul className='mt-4 mb-0 px-3 d-flex'>
+                        <ul className='mt-4 mb-0 px-3 d-flex' data-aos="zoom-in">
                             <li className='w-50'>IT Professional services
                             </li>
                             <li className='w-50'>IT Professional services
@@ -44,7 +44,7 @@ const Home = () => {
                         <p className='py-4 mb-0'>Our teams know how to harness the power of data, artificial intelligence, modernising core, optimising and automating operations to achieve your business goals.</p>
                         <Link to="/about" className='btn btn-primary rounded-pill text-uppercase'>More About Us <GoArrowUpRight /></Link>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6" data-aos="fade-left">
                         <img style={{ width: '100%', height: 'auto', borderRadius: '10px' }} src={aboutImg} alt="Who We bring" />
                     </div>
                 </div>

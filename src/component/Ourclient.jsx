@@ -70,7 +70,7 @@ const Ourclient = () => {
         <div className='container pt-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3 className='doticon mb-4'>Our Clients</h3>
+                    <h3 data-aos="zoom-in" className='doticon mb-4'>Our Clients</h3>
                 </div>
                 <div className="col-12 mt-3">
                     <Slider {...settings}>
@@ -83,7 +83,7 @@ const Ourclient = () => {
                         }
                     </Slider>
                     <div className="col-12 d-flex justify-content-center pt-4">
-                        <div className="p-2 fs-custom text-center w-50 rounded-pill text-bg-light elimentor-diver">
+                        <div data-aos="zoom-in" className="p-2 fs-custom text-center w-50 rounded-pill text-bg-light elimentor-diver">
                             JOIN THE 5+ COMPANIES TRUSTING ORRITECH
                         </div>
                     </div>
