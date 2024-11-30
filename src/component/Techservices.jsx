@@ -39,7 +39,6 @@ const Techservices = () => {
                 <div className="row">
                     {
                         techServciesData.map((item) => {
-                            console.log(item);
                             return (
                                 <div className="col-3" key={item.id}>
                                     <div className="card">

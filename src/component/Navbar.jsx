@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { CiClock2, CiFacebook, CiLinkedin } from 'react-icons/ci'
 import { IoLogoInstagram, IoMailUnreadOutline } from 'react-icons/io5'
 import { RiTwitterXLine } from 'react-icons/ri'
@@ -7,6 +7,32 @@ import { Link } from 'react-router-dom'
 import { IoCallOutline } from "react-icons/io5"
 
 const Navbar = () => {
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        // Debounced scroll handler for better performance
+        let timeoutId = null;
+
+        const handleScroll = () => {
+            if (timeoutId) clearTimeout(timeoutId);
+
+            timeoutId = setTimeout(() => {
+                if (window.scrollY > 0) {
+                    setIsFixed(true);
+                } else {
+                    setIsFixed(false);
+                }
+            }, 50); // Adjust debounce delay as needed
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            clearTimeout(timeoutId); // Clear any pending timeouts
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <div className="position-absolute w-100 z-2 border-bottom">
@@ -33,7 +59,7 @@ const Navbar = () => {
                     </div>
                 </nav>
             </div>
-            <div style={{ top: '47px' }} className="position-absolute w-100 z-2">
+            <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed" : ""}`}>
                 <nav className='container py-3'>
                     <div className="row align-items-center">
                         <div className="col-3">
@@ -46,8 +72,8 @@ const Navbar = () => {
                             <Link className='text-white text-decoration-none fs-6 ms-3' to="/contact">Contact</Link>
                         </div>
                         <div className="col-3 text-end">
-                           <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:6205044930"><IoCallOutline /> &nbsp;
-                           +91-6205044930</Link>
+                            <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:6205044930"><IoCallOutline /> &nbsp;
+                                +91-6205044930</Link>
                         </div>
                     </div>
                 </nav>

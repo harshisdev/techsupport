@@ -70,12 +70,11 @@ const Ourservices = () => {
                 <div className="col-12 d-flex justify-content-center">
                     <h3 className='doticon my-4'>Our Services</h3>
                 </div>
-                <div className="col-12 d-flex justify-content-center mt-3"><h2 className='fs-3 w-50 text-center'>We Offer a Wide Variety of IT Services</h2></div>
                 <div className='py-3'>
                     <Slider {...settings}>
                         {
                             ourServicesData.map((item) =>
-                                <div className='our-services'>
+                                <div className='our-services' key={item.id}>
                                     <div className="card p-3 position-relative">
                                         <div className='imgserviceslap'></div>
                                         <div className="card-body" >
@@ -88,7 +87,7 @@ const Ourservices = () => {
                             )}
                     </Slider>
                 </div>
-                <p className='text-center'>We have an amazing variety of services to offer so <Link to="/services" className="ps-2 text-decoration-none text-uppercase">
+                <p className='text-center'>We have an amazing variety of services to offer so <Link to="/services" className="ps-2 text-decoration-none text-uppercase fs-custom">
                     See All Services <span><GoArrowUpRight /></span></Link></p>
             </div>
         </div>
