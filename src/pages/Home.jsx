@@ -13,9 +13,10 @@ import Footer from '../component/Footer';
 import ScrollToTopButton from '../component/ScrollToTopButton';
 
 const Home = () => {
+
     return (
         <>
-            <Navbar />
+            <Navbar activeSection='home' />
             <Banner />
             <Ourclient />
             <Techservices />

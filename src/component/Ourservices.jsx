@@ -87,7 +87,7 @@ const Ourservices = () => {
                             )}
                     </Slider>
                 </div>
-                <p className='text-center'>We have an amazing variety of services to offer so <Link to="/services" className="ps-2 text-decoration-none text-uppercase fs-custom">
+                <p className='text-center'>We have an amazing variety of services to offer so <Link to="/services" className="ps-2 text-primary text-decoration-none text-uppercase fs-custom">
                     See All Services <span><GoArrowUpRight /></span></Link></p>
             </div>
         </div>

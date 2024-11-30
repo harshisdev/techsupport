@@ -9,28 +9,32 @@ const Techservices = () => {
             title: 'Technology Consulting',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
             icon: Icon1,
-            bgimage: bgImage
+            bgimage: bgImage,
+            animation: 'fade-right'
         },
         {
             id: 2,
             title: 'IT Support',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
             icon: Icon1,
-            bgimage: bgImage
+            bgimage: bgImage,
+            animation: 'zoom-in'
         },
         {
             id: 3,
             title: 'IT Management',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
             icon: Icon1,
-            bgimage: bgImage
+            bgimage: bgImage,
+            animation: 'zoom-in'
         },
         {
             id: 4,
             title: 'IT Security',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
             icon: Icon1,
-            bgimage: bgImage
+            bgimage: bgImage,
+            animation: 'fade-left'
         }
     ]
     return (
@@ -41,7 +45,7 @@ const Techservices = () => {
                         techServciesData.map((item) => {
                             return (
                                 <div className="col-3" key={item.id}>
-                                    <div className="card">
+                                    <div className="card" data-aos={item.animation}>
                                         <div className='px-3 pt-3 position-relative'>
                                             <img src={item.icon} style={{ width: '60px', height: '60px' }} className="card-img-top position-relative z-3" alt="Technology Consulting" />
                                             <div className='imgroundlap' ></div>

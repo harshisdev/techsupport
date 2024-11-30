@@ -6,7 +6,8 @@ import { SlLocationPin } from 'react-icons/sl'
 import { Link } from 'react-router-dom'
 import { IoCallOutline } from "react-icons/io5"
 
-const Navbar = () => {
+const Navbar = ({ activeSection }) => {
+    console.log(activeSection)
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -22,13 +23,13 @@ const Navbar = () => {
                 } else {
                     setIsFixed(false);
                 }
-            }, 50); // Adjust debounce delay as needed
+            });
         };
 
         window.addEventListener("scroll", handleScroll);
 
         return () => {
-            clearTimeout(timeoutId); // Clear any pending timeouts
+            clearTimeout(timeoutId);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -66,10 +67,10 @@ const Navbar = () => {
                             <Link to="/"><img src="https://demo2.themelexus.com/neotech/wp-content/uploads/2024/10/logo2.svg" alt="logo" /></Link>
                         </div>
                         <div className="col-6 d-flex justify-content-center">
-                            <Link className='text-white text-decoration-none fs-6' to="/">Home</Link>
-                            <Link className='text-white text-decoration-none fs-6 ms-3' to="/about">About</Link>
-                            <Link className='text-white text-decoration-none fs-6 ms-3' to="/services">Services</Link>
-                            <Link className='text-white text-decoration-none fs-6 ms-3' to="/contact">Contact</Link>
+                            <Link className={`text-white text-decoration-none fs-6 ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
+                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
+                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>
+                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'contact' ? 'active' : ''}`} to="/contact">Contact</Link>
                         </div>
                         <div className="col-3 text-end">
                             <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:6205044930"><IoCallOutline /> &nbsp;

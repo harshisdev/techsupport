@@ -5,7 +5,7 @@ import Footer from '../component/Footer'
 const Services = () => {
   return (
     <>
-      <Navbar />
+      <Navbar activeSection='services' />
       <Footer />
     </>
   )

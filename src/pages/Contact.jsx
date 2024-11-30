@@ -3,9 +3,10 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 const Contact = () => {
+
     return (
         <>
-            <Navbar />
+            <Navbar activeSection='contact' />
             <Footer />
         </>
     )
