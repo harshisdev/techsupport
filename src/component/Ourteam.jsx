@@ -71,8 +71,8 @@ const Ourteam = () => {
                                         </div>
                                     </div>
                                     <div  data-aos="zoom-in" className='pt-3 text-center'>
-                                        <h5 className="card-title">{item.name}</h5>
-                                        <p className="card-text">{item.designation}</p>
+                                        <h5 className="card-title fs-6">{item.name}</h5>
+                                        <p className="card-text fs-custom">{item.designation}</p>
                                     </div>
                                 </>
                             )
