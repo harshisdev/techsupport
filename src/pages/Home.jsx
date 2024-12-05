@@ -11,6 +11,7 @@ import Ourteam from '../component/Ourteam';
 import Ourclient from '../component/Ourclient';
 import Footer from '../component/Footer';
 import ScrollToTopButton from '../component/ScrollToTopButton';
+import Faq from '../component/Faq';
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
         <>
             <Navbar activeSection='home' />
             <Banner />
-            <Ourclient />
+            {/* <Ourclient /> */}
             <Techservices />
             <div className='container'>
                 <div className="row">
@@ -55,6 +56,7 @@ const Home = () => {
             </div>
             <Techindex />
             <Ourteam />
+            <Faq />
             <Footer />
             <ScrollToTopButton />
         </>

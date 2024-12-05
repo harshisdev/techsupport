@@ -59,7 +59,7 @@ const Techindex = () => {
                         {
                             tecIndex.map((item) => {
                                 return (
-                                    <div key={item.id}>
+                                    <div data-aos="zoom-in" key={item.id}>
                                         <label className='fw-bold'>{item.title}</label>
                                         <div className='progressbar my-3' datalabel={item.percentage}>
                                             <span style={{ width: item.percentage }}></span>

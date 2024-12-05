@@ -96,6 +96,9 @@ body {
     border-color: $primary;
   }
 }
+.btn:first-child:active{
+  background-color: transparent !important;
+}
 .text-primary {
   color: $primary !important;
 }
@@ -428,6 +431,17 @@ body {
     width: 50%;
     height: 1px;
     background-color: $gray;
+  }
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+  background: #7dc799;
+  color: $white;
+  &::after{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5L8 11L14 5"/></svg>');
+    transition: 0.3s all ease-in-out;    
   }
 }
 

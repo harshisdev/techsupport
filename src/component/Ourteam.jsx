@@ -44,7 +44,7 @@ const Ourteam = () => {
         <div className='container pb-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3  data-aos="zoom-in" className='doticon mb-4'>Meet our team of experts</h3>
+                    <h3  data-aos="zoom-in" className='doticon mb-4'>Meet Our Team of Experts</h3>
                 </div>
             </div>
             <div className='mt-4'>
