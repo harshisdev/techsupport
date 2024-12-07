@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import Career from './pages/Career';
+import Error from './pages/Error';
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
