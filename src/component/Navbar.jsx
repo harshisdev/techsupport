@@ -73,8 +73,8 @@ const Navbar = ({ activeSection }) => {
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'contact' ? 'active' : ''}`} to="/contact">Contact</Link>
                         </div>
                         <div className="col-3 text-end">
-                            <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:6205044930"><IoCallOutline /> &nbsp;
-                                +91-6205044930</Link>
+                            <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:7056967572"><IoCallOutline /> &nbsp;
+                                +91-7056967572</Link>
                         </div>
                     </div>
                 </nav>
