@@ -5,36 +5,20 @@ import Banner2 from "../assets/images/banner-2.jpg";
 import Banner3 from "../assets/images/banner-3.jpg";
 import Banner4 from "../assets/images/banner-4.jpg";
 import Banner5 from "../assets/images/banner-5.jpg";
-import { GoArrowUpRight } from "react-icons/go";
+import { GoArrowUpRight } from 'react-icons/go';
 
 const Banner = () => {
-    const [activeSlide, setActiveSlide] = useState(0); // Start with the first slide
+    const [activeSlide, setActiveSlide] = useState(0);
     const [isAnimating, setIsAnimating] = useState(true);
-
-    const settings = {
-        dots: false,
-        arrow: false,
-        fade: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        waitForAnimate: false,
-        autoplay: true,
-        autoplaySpeed: 4500,
-        pauseOnHover: false,
-        afterChange: (current) => {
-            setIsAnimating(true);
-            setActiveSlide(current); // Update the active slide
-        },
-    };
+    const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setIsAnimating(false); // Stop the animation after 4 seconds
+            setIsAnimating(false);
+            setExpanded(false);
         }, 4000);
 
-        return () => clearTimeout(timer); // Cleanup the timer
+        return () => clearTimeout(timer);
     }, [activeSlide]);
 
     const bannerContent = [
@@ -59,17 +43,39 @@ const Banner = () => {
 
         {
             id: "4",
-            title: "Achieve Success Together",
-            description: "We provide expertise and guidance for your business growth.",
+            title: "IT Manpower Backup and Engineer Support",
+            description: "We offer reliable IT manpower backup services, providing skilled engineers to support your business during critical times. Whether you need temporary or ongoing assistance, our engineers are equipped to handle a wide range of IT tasks, from troubleshooting and system maintenance to network support and installations. Our flexible staffing solutions ensure that your operations continue smoothly, even during peak demand periods or unexpected staff shortages. With our experienced IT professionals, you can maintain productivity and minimize disruptions, knowing you have expert support whenever you need it.",
             image: Banner4
         },
         {
             id: "5",
-            title: "Achieve Success Together",
-            description: "We provide expertise and guidance for your business growth.",
+            title: "Network Support, AMC, and Maintenance Services",
+            description: "We offer comprehensive network support, Annual Maintenance Contracts (AMC), and ongoing maintenance services to ensure the optimal performance and security of your IT infrastructure. Our expert team is dedicated to managing and maintaining your network, addressing any issues that arise promptly, and implementing preventive measures to avoid future disruptions. From routine check-ups and system updates to troubleshooting and repair, we provide tailored solutions to meet the unique needs of your business. With our AMC services, you can rest assured that your network will remain reliable, secure, and efficient, minimizing downtime and enhancing overall productivity.",
             image: Banner5
         }
     ];
+
+    const ReadMore = () => {
+        setExpanded(!expanded);
+    };
+
+    const settings = {
+        dots: false,
+        arrow: false,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        waitForAnimate: false,
+        autoplay: true,
+        autoplaySpeed: 4500,
+        pauseOnHover: false,
+        afterChange: (current) => {
+            setIsAnimating(true);
+            setActiveSlide(current);
+        },
+    };
 
     return (
         <div className="slider-banner position-relative">
@@ -90,7 +96,10 @@ const Banner = () => {
                         <div className="col-8">
                             <div className={`slider-content text-white ${isAnimating ? "animate" : ""}`}>
                                 <h1 className="title">{bannerContent[activeSlide]?.title || bannerContent[0].title}</h1>
-                                <p className="description lh-lg">{bannerContent[activeSlide]?.description || bannerContent[0].description}</p>
+                                <p className={`description lh-lg ${expanded ? "d-block" : ""} `}>{bannerContent[activeSlide]?.description || bannerContent[0].description}</p>
+                                <button onClick={ReadMore} className="btn btn-primary rounded-pill">
+                                    {expanded ? " Show Less" : " Read More"} <GoArrowUpRight />
+                                </button>
                             </div>
                         </div>
                     </div>

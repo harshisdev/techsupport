@@ -34,6 +34,9 @@ body {
 .fs-custom {
   font-size: 0.825rem;
 }
+.custom-padding{
+  padding-top: 9rem;
+}
 .active {
   color: $primary !important;
   position: relative;
@@ -58,7 +61,7 @@ body {
   a {
     color: $black !important;
   }
-  .active{
+  .active {
     color: $primary !important;
   }
 }
@@ -96,7 +99,7 @@ body {
     border-color: $primary;
   }
 }
-.btn:first-child:active{
+.btn:first-child:active {
   background-color: transparent !important;
 }
 .text-primary {
@@ -120,6 +123,12 @@ body {
 .slider-content.animate {
   opacity: 1;
   transform: translateY(0);
+}
+.description {
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 
 .techservices {
@@ -433,15 +442,15 @@ body {
     background-color: $gray;
   }
 }
-.accordion-button:focus{
+.accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background: #7dc799;
   color: $white;
-  &::after{
+  &::after {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5L8 11L14 5"/></svg>');
-    transition: 0.3s all ease-in-out;    
+    transition: 0.3s all ease-in-out;
   }
 }
 

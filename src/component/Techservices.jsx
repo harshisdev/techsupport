@@ -30,7 +30,7 @@ const Techservices = () => {
         },
         {
             id: 4,
-            title: 'IT Security',
+            title: 'Server & Cloud Support',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
             icon: Icon1,
             bgimage: bgImage,

@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import { IoCallOutline } from "react-icons/io5"
 
 const Navbar = ({ activeSection }) => {
-    console.log(activeSection)
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -36,7 +35,7 @@ const Navbar = ({ activeSection }) => {
 
     return (
         <>
-            <div className="position-absolute w-100 z-2 border-bottom">
+            <div className={`position-absolute w-100 z-2 border-bottom ${activeSection === "home" ? "" : "bg-black"}`}>
                 <nav className='container py-2'>
                     <div className="row align-items-center">
                         <div data-aos="zoom-in" className="col-1 text-white fs-custom">
@@ -48,7 +47,7 @@ const Navbar = ({ activeSection }) => {
                         <div data-aos="zoom-in" className="col-3 text-white fs-custom">
                             <SlLocationPin /> New Delhi, Noida, Gurgaon
                         </div>
-                        <div data-aos="fade-left" className="col-6 d-flex justify-content-end">
+                        <div data-aos="fade-in" className="col-6 d-flex justify-content-end">
                             <Link className='text-white fs-5' to="" target="_blank"><CiFacebook /></Link>
                             <Link className='text-white fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
                             </Link>
@@ -60,7 +59,7 @@ const Navbar = ({ activeSection }) => {
                     </div>
                 </nav>
             </div>
-            <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed" : ""}`}>
+            <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed" : ""} ${activeSection === "home" ? "" : "bg-black"}`}>
                 <nav className='container py-3'>
                     <div className="row align-items-center">
                         <div className="col-3">
@@ -70,6 +69,7 @@ const Navbar = ({ activeSection }) => {
                             <Link className={`text-white text-decoration-none fs-6 ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>
+                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'career' ? 'active' : ''}`} to="/career">Career</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'contact' ? 'active' : ''}`} to="/contact">Contact</Link>
                         </div>
                         <div className="col-3 text-end">
