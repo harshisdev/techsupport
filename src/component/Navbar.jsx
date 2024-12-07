@@ -65,7 +65,7 @@ const Navbar = ({ activeSection }) => {
                         <div className="col-3">
                             <Link to="/"><img src="https://demo2.themelexus.com/neotech/wp-content/uploads/2024/10/logo2.svg" alt="logo" /></Link>
                         </div>
-                        <div className="col-6 d-flex justify-content-center">
+                        <div data-aos="zoom-in" className="col-6 d-flex justify-content-center">
                             <Link className={`text-white text-decoration-none fs-6 ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>

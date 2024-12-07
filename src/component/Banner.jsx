@@ -5,7 +5,6 @@ import Banner2 from "../assets/images/banner-2.jpg";
 import Banner3 from "../assets/images/banner-3.jpg";
 import Banner4 from "../assets/images/banner-4.jpg";
 import Banner5 from "../assets/images/banner-5.jpg";
-import { GoArrowUpRight } from 'react-icons/go';
 
 const Banner = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -30,32 +29,33 @@ const Banner = () => {
         },
         {
             id: "2",
-            title: "Your Code, Our Support",
+            title: "Your Code & Our Support",
             description: "We provide comprehensive developer support to help developers overcome technical challenges and streamline their development processes. Our team offers expert guidance in debugging, troubleshooting, and resolving issues across various programming languages and frameworks. We assist with optimizing code, ensuring smooth integrations, and providing solutions for performance improvements",
             image: Banner1
         },
         {
             id: "3",
-            title: "Printer Rental and Support Solutions.",
+            title: "Printer Rental & Support Solutions",
             description: "We provide comprehensive support for our rental printers to ensure that your printing needs are met seamlessly. Our dedicated support team is available to assist with setup, troubleshooting, and maintenance of the rental printers, ensuring they are always functioning at their best",
             image: Banner2
         },
 
         {
             id: "4",
-            title: "IT Manpower Backup and Engineer Support",
+            title: "IT Manpower Backup & Engineer Support",
             description: "We offer reliable IT manpower backup services, providing skilled engineers to support your business during critical times. Whether you need temporary or ongoing assistance, our engineers are equipped to handle a wide range of IT tasks, from troubleshooting and system maintenance to network support and installations. Our flexible staffing solutions ensure that your operations continue smoothly, even during peak demand periods or unexpected staff shortages. With our experienced IT professionals, you can maintain productivity and minimize disruptions, knowing you have expert support whenever you need it.",
             image: Banner4
         },
         {
             id: "5",
-            title: "Network Support, AMC, and Maintenance Services",
+            title: "Network Support, AMC, & Maintenance Services",
             description: "We offer comprehensive network support, Annual Maintenance Contracts (AMC), and ongoing maintenance services to ensure the optimal performance and security of your IT infrastructure. Our expert team is dedicated to managing and maintaining your network, addressing any issues that arise promptly, and implementing preventive measures to avoid future disruptions. From routine check-ups and system updates to troubleshooting and repair, we provide tailored solutions to meet the unique needs of your business. With our AMC services, you can rest assured that your network will remain reliable, secure, and efficient, minimizing downtime and enhancing overall productivity.",
             image: Banner5
         }
     ];
 
-    const ReadMore = () => {
+    const ReadMore = (e) => {
+        e.preventDefault();
         setExpanded(!expanded);
     };
 
@@ -96,10 +96,10 @@ const Banner = () => {
                         <div className="col-8">
                             <div className={`slider-content text-white ${isAnimating ? "animate" : ""}`}>
                                 <h1 className="title">{bannerContent[activeSlide]?.title || bannerContent[0].title}</h1>
-                                <p className={`description lh-lg ${expanded ? "d-block" : ""} `}>{bannerContent[activeSlide]?.description || bannerContent[0].description}</p>
-                                <button onClick={ReadMore} className="btn btn-primary rounded-pill">
-                                    {expanded ? " Show Less" : " Read More"} <GoArrowUpRight />
-                                </button>
+                                <p className={`description ${expanded ? "d-block" : ""} `}>{bannerContent[activeSlide]?.description || bannerContent[0].description}</p>
+                                <a href='#' onClick={ReadMore} className="cursor-pointer text-primary fs-custom">
+                                    {expanded ? " Show Less" : " Read More"}
+                                </a>
                             </div>
                         </div>
                     </div>

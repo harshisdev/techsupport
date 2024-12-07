@@ -34,7 +34,7 @@ body {
 .fs-custom {
   font-size: 0.825rem;
 }
-.custom-padding{
+.custom-padding {
   padding-top: 9rem;
 }
 .active {
@@ -125,10 +125,13 @@ body {
   transform: translateY(0);
 }
 .description {
+  padding-top: 10px;
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+  color: #dad8d8;
+  line-height: 1.9;
 }
 
 .techservices {
