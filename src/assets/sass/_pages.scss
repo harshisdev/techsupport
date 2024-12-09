@@ -51,6 +51,9 @@ body {
     transition: 0.3s all ease-in-out;
   }
 }
+.nav-link-text a:hover{
+  color: $primary !important;
+}
 
 .fixed {
   position: fixed !important;
@@ -449,7 +452,7 @@ body {
   box-shadow: none !important;
 }
 .accordion-button:not(.collapsed) {
-  background: #7dc799;
+  background: $secondary;
   color: $white;
   &::after {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5L8 11L14 5"/></svg>');

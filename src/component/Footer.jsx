@@ -13,21 +13,21 @@ const Footer = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-4 text-black fs-custom">
-                            <span className='d-block'><CiClock2 /> 24/7</span>
+                            <span className='d-block'><CiClock2 className='text-primary' /> 24/7</span>
                             <br />
-                            <SlLocationPin className='me-2' />  New Delhi, Noida, Gurgaon
+                            <SlLocationPin className='me-2 text-primary' />  New Delhi, Noida, Gurgaon
                         </div>
-                        <div className="col-4 text-black fs-custom justify-content-center d-flex">
-                            <Link data-aos="zoom-in" className='text-black fs-5' to="" target="_blank"><CiFacebook /></Link>
-                            <Link data-aos="zoom-in" className='text-black fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
+                        <div className="col-4 fs-custom justify-content-center d-flex">
+                            <Link data-aos="zoom-in" className='text-primary fs-5' to="" target="_blank"><CiFacebook /></Link>
+                            <Link data-aos="zoom-in" className='text-primary fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
                             </Link>
-                            <Link data-aos="zoom-in" className='text-black fs-5 ms-3' to="" target="_blank"><IoLogoInstagram />
+                            <Link data-aos="zoom-in" className='text-primary fs-5 ms-3' to="" target="_blank"><IoLogoInstagram />
                             </Link>
-                            <Link data-aos="zoom-in" className='text-black fs-5 ms-3' to="" target="_blank"><CiLinkedin />
+                            <Link data-aos="zoom-in" className='text-primary fs-5 ms-3' to="" target="_blank"><CiLinkedin />
                             </Link>
                         </div>
                         <div className="col-4 d-flex justify-content-end fs-custom align-items-center">
-                            <Link className='text-decoration-none text-black' to="mailto:abc@gmail.com"><IoMailUnreadOutline /> abc@gmail.com</Link>
+                            <Link className='text-decoration-none text-black' to="mailto:abc@gmail.com"><IoMailUnreadOutline className='text-primary' /> abc@gmail.com</Link>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between">
-                            <p className="mb-0 fs-custom">© 2024 All Rights Reserved by <a href="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" className="text-decoration-none text-bg-light">TechSupport.</a></p>
+                            <p className="mb-0 fs-custom">© 2024 All Rights Reserved by <Link to={window.location.href} className="text-primary text-bg-light">TechSupport.</Link></p>
                             <p className="mb-0 fs-custom">Made with <span className='fs-6 text-primary'><FaHeart /></span> Harsh</p>
                         </div>
                     </div>

@@ -4,7 +4,9 @@ import { IoLogoInstagram, IoMailUnreadOutline } from 'react-icons/io5'
 import { RiTwitterXLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 import { Link } from 'react-router-dom'
-import { IoCallOutline } from "react-icons/io5"
+import { IoCallOutline } from "react-icons/io5";
+import logo from '../assets/images/logo.svg';
+import logo1 from '../assets/images/logo1.svg';
 
 const Navbar = ({ activeSection }) => {
     const [isFixed, setIsFixed] = useState(false);
@@ -39,21 +41,21 @@ const Navbar = ({ activeSection }) => {
                 <nav className='container py-2'>
                     <div className="row align-items-center">
                         <div data-aos="zoom-in" className="col-1 text-white fs-custom">
-                            <CiClock2 /> 24/7
+                            <CiClock2 className='text-primary' /> &nbsp; 24/7
                         </div>
                         <div data-aos="zoom-in" className="col-2 text-white text-center fs-custom">
-                            <Link className='text-decoration-none text-white' to="mailto:abc@gmail.com"><IoMailUnreadOutline /> abc@gmail.com</Link>
+                            <Link className='text-decoration-none text-white' to="mailto:abc@gmail.com"><IoMailUnreadOutline className='text-primary' /> &nbsp; abc@gmail.com</Link>
                         </div>
                         <div data-aos="zoom-in" className="col-3 text-white fs-custom">
-                            <SlLocationPin /> New Delhi, Noida, Gurgaon
+                            <SlLocationPin className='text-primary' /> &nbsp; New Delhi, Noida, Gurgaon
                         </div>
                         <div data-aos="fade-in" className="col-6 d-flex justify-content-end">
-                            <Link className='text-white fs-5' to="" target="_blank"><CiFacebook /></Link>
-                            <Link className='text-white fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
+                            <Link className='text-primary fs-5' to="" target="_blank"><CiFacebook /></Link>
+                            <Link className='text-primary fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
                             </Link>
-                            <Link className='text-white fs-5 ms-3' to="" target="_blank"><IoLogoInstagram />
+                            <Link className='text-primary fs-5 ms-3' to="" target="_blank"><IoLogoInstagram />
                             </Link>
-                            <Link className='text-white fs-5 ms-3' to="" target="_blank"><CiLinkedin />
+                            <Link className='text-primary fs-5 ms-3' to="" target="_blank"><CiLinkedin />
                             </Link>
                         </div>
                     </div>
@@ -63,9 +65,9 @@ const Navbar = ({ activeSection }) => {
                 <nav className='container py-3'>
                     <div className="row align-items-center">
                         <div className="col-3">
-                            <Link to="/"><img src="https://demo2.themelexus.com/neotech/wp-content/uploads/2024/10/logo2.svg" alt="logo" /></Link>
+                            <Link to="/"><img style={{width:'100%', height:'auto'}} src={isFixed=== true ? logo : logo1} alt="logo" /></Link>
                         </div>
-                        <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center">
+                        <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center nav-link-text">
                             <Link className={`text-white text-decoration-none fs-6 ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
                             <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>
