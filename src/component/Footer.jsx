@@ -27,7 +27,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className="col-4 d-flex justify-content-end fs-custom align-items-center">
-                            <Link className='text-decoration-none text-black' to="mailto:abc@gmail.com"><IoMailUnreadOutline className='text-primary' /> abc@gmail.com</Link>
+                            <Link className='text-decoration-none text-black' to="mailto:avinashjha0321@gmail.com"><IoMailUnreadOutline className='text-primary' /> avinashjha0321@gmail.com</Link>
                         </div>
                     </div>
                 </div>

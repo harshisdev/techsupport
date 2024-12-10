@@ -12,11 +12,15 @@ import Ourclient from '../component/Ourclient';
 import Footer from '../component/Footer';
 import ScrollToTopButton from '../component/ScrollToTopButton';
 import Faq from '../component/Faq';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>IT Services Group</title>
+            </Helmet>
             <Navbar activeSection='home' />
             <Banner />
             {/* <Ourclient /> */}

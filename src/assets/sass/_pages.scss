@@ -70,6 +70,9 @@ body {
   .active {
     color: $primary !important;
   }
+  .btn-outline-primary:hover{
+    color: $white !important;
+  }
 }
 .overlaplayer {
   background: $black;

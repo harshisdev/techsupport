@@ -2,9 +2,9 @@
 	<title>logo (2)-svg</title>
 	<style>
 		tspan { white-space:pre } 
-		.t0 { font-size: 189px;fill: #002d74;font-weight: bold;font-family: "Galvji" } 
+		.t0 { font-size: 189px;fill: #fff;font-weight: bold;font-family: "Galvji" } 
 		.t1 { font-size: 78px;fill: #fff;font-weight: 900;font-family: "Kanit-Black", "Kanit" } 
-		.t2 { font-size: 93px;fill: #002d74;font-weight: 900;font-family: "Kanit-Black", "Kanit" } 
+		.t2 { font-size: 93px;fill: #fff;font-weight: 900;font-family: "Kanit-Black", "Kanit" } 
 		.s3 { fill: #ffffff } 
 		.s4 { fill: #004dde;stroke: #004dde;stroke-width: 5 } 
 	</style>
