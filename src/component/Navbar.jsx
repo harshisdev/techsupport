@@ -68,7 +68,7 @@ const Navbar = ({ activeSection }) => {
                             <Link className='text-decoration-none' to="/">
                                 <img style={{ width: '100%', height: 'auto' }} src={isFixed === true ? logo : logo1} alt="logo" />
                                 <br />
-                                <h1 className={`fs-custom fst-italic text-center mb-0 ${isFixed  === true ? "text-black" : "text-white"}`}>Quality is the best policy</h1>
+                                <h1 data-aos="zoom-in" className={`fs-custom fst-italic text-center mb-0 ${isFixed  === true ? "text-black" : "text-white"}`}>Quality is the best policy</h1>
                             </Link>
                         </div>
                         <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center nav-link-text">
