@@ -44,7 +44,7 @@ const Navbar = ({ activeSection }) => {
                             <CiClock2 className='text-primary' /> &nbsp; 24/7
                         </div>
                         <div data-aos="zoom-in" className="col-2 text-white text-center fs-custom">
-                            <Link className='text-decoration-none text-white' to="mailto:abc@gmail.com"><IoMailUnreadOutline className='text-primary' /> &nbsp; abc@gmail.com</Link>
+                            <Link className='text-decoration-none text-white' to="mailto:avinashjha0321@gmail.com"><IoMailUnreadOutline className='text-primary' /> &nbsp; avinashjha0321@gmail.com</Link>
                         </div>
                         <div data-aos="zoom-in" className="col-3 text-white fs-custom">
                             <SlLocationPin className='text-primary' /> &nbsp; New Delhi, Noida, Gurgaon
