@@ -61,7 +61,7 @@ const Navbar = ({ activeSection }) => {
                     </div>
                 </nav>
             </div>
-            <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed" : ""} ${activeSection === "home" ? "" : "bg-black"}`}>
+            <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed bg-white" : ""} ${activeSection === "home" || isFixed ? "" : "bg-black"}`}>
                 <nav className='container py-3'>
                     <div className="row align-items-center">
                         <div className="col-3">
