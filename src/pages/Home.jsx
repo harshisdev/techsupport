@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="row mt-4">
                     <div className="col-6" data-aos="fade-right">
                         <h5 className='mb-0'>Exclusive Technology to Provide IT Solutions & Services</h5>
-                        <p className='border-bottom py-4 mb-0'>We have over 20+ years of experience in all stages of software design, development, maintenance, and support.</p>
+                        <p className='border-bottom py-4 mb-0'>We have over 3+ years of experience in all stages of software design, development, maintenance, and support.</p>
                         <ul className='mt-4 m-0 px-3 d-flex' data-aos="zoom-in">
                             <li className='w-50'>IT Professional services
                             </li>

@@ -43,13 +43,13 @@ const Navbar = ({ activeSection }) => {
                         <div data-aos="zoom-in" className="col-1 text-white fs-custom">
                             <CiClock2 className='text-primary' /> &nbsp; 24/7
                         </div>
-                        <div data-aos="zoom-in" className="col-2 text-white text-center fs-custom">
+                        <div data-aos="zoom-in" className="col-3 text-white text-center fs-custom">
                             <Link className='text-decoration-none text-white' to="mailto:avinashjha0321@gmail.com"><IoMailUnreadOutline className='text-primary' /> &nbsp; avinashjha0321@gmail.com</Link>
                         </div>
                         <div data-aos="zoom-in" className="col-3 text-white fs-custom">
                             <SlLocationPin className='text-primary' /> &nbsp; New Delhi, Noida, Gurgaon
                         </div>
-                        <div data-aos="fade-in" className="col-6 d-flex justify-content-end">
+                        <div data-aos="fade-in" className="col-5 d-flex justify-content-end">
                             <Link className='text-primary fs-5' to="" target="_blank"><CiFacebook /></Link>
                             <Link className='text-primary fs-5 ms-3' to="" target="_blank"><RiTwitterXLine />
                             </Link>
@@ -62,13 +62,13 @@ const Navbar = ({ activeSection }) => {
                 </nav>
             </div>
             <div style={{ top: '47px' }} className={`position-absolute w-100 z-2 ${isFixed ? "fixed bg-white" : ""} ${activeSection === "home" || isFixed ? "" : "bg-black"}`}>
-                <nav className='container py-3'>
+                <nav className='container py-2'>
                     <div className="row align-items-center">
                         <div className="col-3">
-                            <Link to="/">
-                                <img style={{width:'100%', height:'auto'}} src={isFixed=== true ? logo : logo1} alt="logo" />
+                            <Link className='text-decoration-none' to="/">
+                                <img style={{ width: '100%', height: 'auto' }} src={isFixed === true ? logo : logo1} alt="logo" />
                                 <br />
-                                <h1 className='fs-custom font-italic mb-0'>Quality is the best policy</h1>
+                                <h1 className={`fs-custom fst-italic text-center mb-0 ${isFixed  === true ? "text-black" : "text-white"}`}>Quality is the best policy</h1>
                             </Link>
                         </div>
                         <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center nav-link-text">
