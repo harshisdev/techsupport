@@ -68,11 +68,11 @@ const Navbar = ({ activeSection }) => {
                             <Link to="/"><img style={{width:'100%', height:'auto'}} src={isFixed=== true ? logo : logo1} alt="logo" /></Link>
                         </div>
                         <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center nav-link-text">
-                            <Link className={`text-white text-decoration-none fs-6 ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
-                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
-                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>
-                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'career' ? 'active' : ''}`} to="/career">Career</Link>
-                            <Link className={`text-white text-decoration-none fs-6 ms-3 ${activeSection === 'contact' ? 'active' : ''}`} to="/contact">Contact</Link>
+                            <Link className={`text-white text-decoration-none fs-custom ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
+                            <Link className={`text-white text-decoration-none fs-custom ms-3 ${activeSection === 'about' ? 'active' : ''}`} to="/about">About</Link>
+                            <Link className={`text-white text-decoration-none fs-custom ms-3 ${activeSection === 'services' ? 'active' : ''}`} to="/services">Services</Link>
+                            <Link className={`text-white text-decoration-none fs-custom ms-3 ${activeSection === 'career' ? 'active' : ''}`} to="/career">Career</Link>
+                            <Link className={`text-white text-decoration-none fs-custom ms-3 ${activeSection === 'contact' ? 'active' : ''}`} to="/contact">Contact</Link>
                         </div>
                         <div className="col-3 text-end">
                             <Link className='btn btn-outline-primary rounded-pill text-white text-decoration-none shadow-sm' to="tel:7056967572"><IoCallOutline /> &nbsp;
