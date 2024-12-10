@@ -65,7 +65,11 @@ const Navbar = ({ activeSection }) => {
                 <nav className='container py-3'>
                     <div className="row align-items-center">
                         <div className="col-3">
-                            <Link to="/"><img style={{width:'100%', height:'auto'}} src={isFixed=== true ? logo : logo1} alt="logo" /></Link>
+                            <Link to="/">
+                                <img style={{width:'100%', height:'auto'}} src={isFixed=== true ? logo : logo1} alt="logo" />
+                                <br />
+                                <h1 className='fs-custom font-italic mb-0'>Quality is the best policy</h1>
+                            </Link>
                         </div>
                         <div data-aos={`${activeSection === 'home' ? "zoom-in" : ""}`} className="col-6 d-flex justify-content-center nav-link-text">
                             <Link className={`text-white text-decoration-none fs-custom ${activeSection === 'home' ? 'active' : ''}`} to="/">Home</Link>
