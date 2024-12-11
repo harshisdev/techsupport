@@ -7,6 +7,10 @@ import itInfrastructureconsultingservicesicon from '../assets/images/itInfrastru
 import networksecuritysolutions from '../assets/images/networksecuritysolutions.png';
 import comprehensiveit from '../assets/images/comprehensiveit.png';
 import repairsolution from '../assets/images/repairsolution.png';
+import Infrastructurconsultingservices from '../assets/images/Infrastructurconsultingservices.png';
+import networksecurityimg from '../assets/images/networksecurityimg.png';
+import comprehensiveitsupportimg from '../assets/images/comprehensiveitsupportimg.png';
+import rentalprinterrepairimg from '../assets/images/rentalprinterrepairimg.png';
 
 const Ourservices = () => {
     const settings = {
@@ -23,24 +27,28 @@ const Ourservices = () => {
         {
             id: '1',
             img: itInfrastructureconsultingservicesicon,
+            bgimages: Infrastructurconsultingservices,
             title: 'IT Infrastructure Consulting Services',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '2',
             img: networksecuritysolutions,
+            bgimages: networksecurityimg,
             title: 'Network & Security Solutions',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '3',
             img: comprehensiveit,
+            bgimages: comprehensiveitsupportimg,
             title: 'Comprehensive IT Support Solution',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '4',
             img: repairsolution,
+            bgimages: rentalprinterrepairimg,
             title: 'Rental Printer Repair and Support Services',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         }
@@ -57,7 +65,7 @@ const Ourservices = () => {
                             ourServicesData.map((item) =>
                                 <div className='our-services' key={item.id}>
                                     <div className="card p-3 position-relative">
-                                        <div className='imgserviceslap'></div>
+                                        <div style={{ backgroundImage: `url(${item.bgimages})` }} className='imgserviceslap'></div>
                                         <div className="card-body" >
                                             <img src={item.img} alt="Network Solutions" />
                                             <h5 className="card-title text-white">{item.title}</h5>
