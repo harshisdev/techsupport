@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import Career from './pages/Career';
 import Error from './pages/Error';
+import ScrollToTopButton from './component/ScrollToTopButton';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
+        <ScrollToTopButton />
       </BrowserRouter>
     </>
   );

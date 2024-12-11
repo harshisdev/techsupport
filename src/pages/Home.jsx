@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 import Techindex from '../component/Techindex';
 import Ourteam from '../component/Ourteam';
 import Footer from '../component/Footer';
-import ScrollToTopButton from '../component/ScrollToTopButton';
 import Faq from '../component/Faq';
 import { Helmet } from 'react-helmet';
 import { FaRegCheckCircle } from 'react-icons/fa';
@@ -32,7 +31,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="row mt-4">
-                    <div className="col-6">
+                    <div className="col-6" data-aos="zoom-in">
                         <h5 className='mb-0'>Exclusive Technology to Provide IT Solutions & Services</h5>
                         <p className='border-bottom py-4 mb-0'>We have over 3+ years of experience in all stages of software design, development, maintenance, and support.</p>
                         <ul style={{ listStyle: 'none' }} className='mt-4 m-0 px-3 d-flex'>
@@ -66,7 +65,6 @@ const Home = () => {
             <Ourteam />
             <Faq />
             <Footer />
-            <ScrollToTopButton />
         </>
     )
 }

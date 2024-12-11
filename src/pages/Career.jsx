@@ -10,8 +10,16 @@ const Career = () => {
         <title>Career at IT Services Group</title>
       </Helmet>
       <Navbar activeSection='career' />
-      <div className="container custom-padding">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore minus saepe cupiditate molestias iusto illum deserunt nobis ducimus! Voluptates iste molestias ipsum magni quia earum qui laboriosam totam, quae corporis. Iste, natus officia labore, accusantium rerum eaque facilis magni quam vel magnam debitis excepturi voluptates quasi nostrum et, cupiditate earum molestias quae architecto. Impedit at hic quasi molestiae debitis explicabo consequatur autem deserunt eligendi aspernatur corporis excepturi voluptatum eius qui magni quisquam dolorum optio, praesentium iste sit accusantium ad. Fuga alias hic qui obcaecati sint temporibus culpa. Possimus suscipit repudiandae aspernatur assumenda, cumque nulla rem consequatur placeat deserunt at rerum.
+      <div className="banner-career">
+        <h1 data-aos="zoom-in">Career</h1>
+      </div>
+      <div className="container my-4">
+        <div className="row">
+          <div className="col-12">
+            <h1 className='fs-5 mb-0 text-center'>We are Hiring
+            </h1>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
