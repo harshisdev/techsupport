@@ -3,7 +3,7 @@ import Navbar from '../component/Navbar';
 import Banner from '../component/Banner';
 import Techservices from '../component/Techservices';
 import { GoArrowUpRight } from 'react-icons/go';
-import aboutImg from '../assets/images/about-img.jpg'
+import itsolutionsservicesimg from '../assets/images/itsolutionsservicesimg.png'
 import Ourservices from '../component/Ourservices';
 import { Link } from 'react-router-dom';
 import Techindex from '../component/Techindex';
@@ -36,10 +36,10 @@ const Home = () => {
                         <h5 className='mb-0'>Exclusive Technology to Provide IT Solutions & Services</h5>
                         <p className='border-bottom py-4 mb-0'>We have over 3+ years of experience in all stages of software design, development, maintenance, and support.</p>
                         <ul style={{ listStyle: 'none' }} className='mt-4 m-0 px-3 d-flex'>
-                            <li  data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                            <li data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
                                 IT Professional services
                             </li>
-                            <li  data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                            <li data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
                                 IT Professional services
                             </li>
                         </ul>
@@ -55,7 +55,7 @@ const Home = () => {
                         <Link to="/about" className='btn btn-primary rounded-pill text-uppercase'>More About Us <GoArrowUpRight /></Link>
                     </div>
                     <div className="col-6" data-aos="fade-left">
-                        <img style={{ width: '100%', height: 'auto', borderRadius: '10px' }} src={aboutImg} alt="Who We bring" />
+                        <img style={{ width: '100%', height: 'auto', borderRadius: '10px' }} src={itsolutionsservicesimg} alt="Who We bring" />
                     </div>
                 </div>
             </div>

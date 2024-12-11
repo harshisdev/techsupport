@@ -1,6 +1,7 @@
 import React from 'react'
-import TechBanner from '../assets/images/banner8.jpg'
+import technologyIndeximg from '../assets/images/technologyIndeximg.png'
 import { GrUserExpert } from 'react-icons/gr'
+import { MdOutlineQuickreply } from 'react-icons/md'
 const Techindex = () => {
     const tecIndex = [
         {
@@ -28,12 +29,12 @@ const Techindex = () => {
         <div className='container py-5'>
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h3  data-aos="zoom-in" className='doticon mb-4'>Technology Index</h3>
+                    <h3 data-aos="zoom-in" className='doticon mb-4'>Technology Index</h3>
                 </div>
             </div>
             <div className="row mt-4">
-                <div className="col-6">
-                    <img data-aos="fade-right" style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={TechBanner} alt="Technology Index" />
+                <div className="col-6 d-flex align-items-center">
+                    <img data-aos="fade-right" style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={technologyIndeximg} alt="Technology Index" />
                 </div>
                 <div className="col-6 align-items-center d-flex">
                     <div data-aos="fade-left">
@@ -49,7 +50,7 @@ const Techindex = () => {
                         </div>
                         <div className='wearealways my-4'>
                             <div className='rounded text-bg-light me-3 d-flex align-items-center justify-content-center' style={{ width: '50px', height: '50px' }}>
-                                <GrUserExpert className='fs-3' />
+                                <MdOutlineQuickreply className='fs-3' />
                             </div>
                             <div>
                                 <h2 className='fs-5'>Quick Support</h2>
