@@ -5,7 +5,7 @@ import ItSupportIcon from '../assets/images/it-support.png';
 import ItManagementIcon from '../assets/images/it-management.png';
 import ServerCloudSupportIcon from '../assets/images/server-cloud-support.png';
 import TechnologyConsultingIcon1 from '../assets/images/technology-consulting-1.png';
-import ItSupportIcon1 from '../assets/images/it-management-1.png';
+import ItSupportIcon1 from '../assets/images/it-support-1.png';
 import ItManagementIcon1 from '../assets/images/it-management-1.png';
 import ServerCloudSupportIcon1 from '../assets/images/server-cloud-support-1.png';
 import TechnologyConsultingImg from '../assets/images/TechnologyConsultingImg.png';
