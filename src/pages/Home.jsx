@@ -8,11 +8,11 @@ import Ourservices from '../component/Ourservices';
 import { Link } from 'react-router-dom';
 import Techindex from '../component/Techindex';
 import Ourteam from '../component/Ourteam';
-import Ourclient from '../component/Ourclient';
 import Footer from '../component/Footer';
 import ScrollToTopButton from '../component/ScrollToTopButton';
 import Faq from '../component/Faq';
 import { Helmet } from 'react-helmet';
+import { FaRegCheckCircle } from 'react-icons/fa';
 
 const Home = () => {
 
@@ -32,19 +32,23 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="row mt-4">
-                    <div className="col-6" data-aos="fade-right">
+                    <div className="col-6">
                         <h5 className='mb-0'>Exclusive Technology to Provide IT Solutions & Services</h5>
                         <p className='border-bottom py-4 mb-0'>We have over 3+ years of experience in all stages of software design, development, maintenance, and support.</p>
-                        <ul className='mt-4 m-0 px-3 d-flex' data-aos="zoom-in">
-                            <li className='w-50'>IT Professional services
+                        <ul style={{ listStyle: 'none' }} className='mt-4 m-0 px-3 d-flex'>
+                            <li  data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                                IT Professional services
                             </li>
-                            <li className='w-50'>IT Professional services
+                            <li  data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                                IT Professional services
                             </li>
                         </ul>
-                        <ul className='mt-4 mb-0 px-3 d-flex' data-aos="zoom-in">
-                            <li className='w-50'>IT Professional services
+                        <ul style={{ listStyle: 'none' }} className='mt-4 mb-0 px-3 d-flex'>
+                            <li data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                                IT Professional services
                             </li>
-                            <li className='w-50'>IT Professional services
+                            <li data-aos="zoom-in" className='w-50'><FaRegCheckCircle className='text-primary me-2' />
+                                IT Professional services
                             </li>
                         </ul>
                         <p className='py-4 mb-0'>Our teams know how to harness the power of data, artificial intelligence, modernising core, optimising and automating operations to achieve your business goals.</p>

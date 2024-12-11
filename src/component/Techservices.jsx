@@ -1,6 +1,14 @@
 import React from 'react'
-import Icon1 from '../assets/images/image.png'
-import bgImage from '../assets/images/tech-man.webp'
+// import Icon1 from '../assets/images/image.png'
+import bgImage from '../assets/images/tech-man.webp';
+import TechnologyConsultingIcon from '../assets/images/technology-consulting.png';
+import ItSupportIcon from '../assets/images/it-support.png';
+import ItManagementIcon from '../assets/images/it-management.png';
+import ServerCloudSupportIcon from '../assets/images/server-cloud-support.png';
+import TechnologyConsultingImg from '../assets/images/TechnologyConsultingImg.png';
+import ItSupportImg from '../assets/images/ItSupportImg.png';
+import ItManagementImg from '../assets/images/ItManagement.png';
+import ServerCloudSupportImg from '../assets/images/ServerCloudSupport.png';
 
 const Techservices = () => {
     const techServciesData = [
@@ -8,38 +16,38 @@ const Techservices = () => {
             id: 1,
             title: 'Technology Consulting',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
-            icon: Icon1,
-            bgimage: bgImage,
+            icon: TechnologyConsultingIcon,
+            bgimage: TechnologyConsultingImg,
             animation: 'fade-right'
         },
         {
             id: 2,
             title: 'IT Support',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
-            icon: Icon1,
-            bgimage: bgImage,
+            icon: ItSupportIcon,
+            bgimage: ItSupportImg,
             animation: 'zoom-in'
         },
         {
             id: 3,
             title: 'IT Management',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
-            icon: Icon1,
-            bgimage: bgImage,
+            icon: ItManagementIcon,
+            bgimage: ItManagementImg,
             animation: 'zoom-in'
         },
         {
             id: 4,
             title: 'Server & Cloud Support',
             description: 'Expertise in a IT consultancy for the many companies, for their different working areas.',
-            icon: Icon1,
-            bgimage: bgImage,
+            icon: ServerCloudSupportIcon,
+            bgimage: ServerCloudSupportImg,
             animation: 'fade-left'
         }
     ]
     return (
         <>
-            <div className="container py-5 techservices">
+            <div className="container py-5 techservices overflow-hidden">
                 <div className="row">
                     {
                         techServciesData.map((item) => {

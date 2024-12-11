@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { MdVerticalAlignTop } from "react-icons/md";
 
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ const ScrollToTopButton = () => {
         <>
             {isVisible && (
                 <button className="scroll-to-top" onClick={scrollToTop}>
-                    ↑
+                    <MdVerticalAlignTop />
                 </button>
             )}
         </>

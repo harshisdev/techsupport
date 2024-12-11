@@ -35,9 +35,8 @@ const Footer = () => {
             <footer className='text-bg-light py-3'>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 d-flex justify-content-between">
-                            <p className="mb-0 fs-custom">© 2024 All Rights Reserved by <Link to={window.location.href} className="text-primary text-bg-light">TechSupport.</Link></p>
-                            <p className="mb-0 fs-custom">Made with <span className='fs-6 text-primary'><FaHeart /></span> Harsh</p>
+                        <div className="col-12 d-flex justify-content-center">
+                            <p className="mb-0 fs-custom">© 2024 All Rights Reserved by <Link to={window.location.href} className="text-primary text-bg-light">it SERVICES GROUP.</Link></p>
                         </div>
                     </div>
                 </div>
