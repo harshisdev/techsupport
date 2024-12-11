@@ -3,6 +3,10 @@ import { GoArrowUpRight } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import ourIcon from '../assets/images/our1.png'
+import itInfrastructureconsultingservicesicon from '../assets/images/itInfrastructureconsultingservicesicon.png'
+import networksecuritysolutions from '../assets/images/networksecuritysolutions.png';
+import comprehensiveit from '../assets/images/comprehensiveit.png';
+import repairsolution from '../assets/images/repairsolution.png';
 
 const Ourservices = () => {
     const settings = {
@@ -13,56 +17,33 @@ const Ourservices = () => {
         swipeToSlide: true,
         dots: false,
         arrow: false,
+        autoplay: true
     };
     const ourServicesData = [
         {
             id: '1',
-            img: ourIcon,
-            title: 'Network Solutions',
+            img: itInfrastructureconsultingservicesicon,
+            title: 'IT Infrastructure Consulting Services',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '2',
-            img: ourIcon,
-            title: 'Network Solutions',
+            img: networksecuritysolutions,
+            title: 'Network & Security Solutions',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '3',
-            img: ourIcon,
-            title: 'Network Solutions',
+            img: comprehensiveit,
+            title: 'Comprehensive IT Support Solution',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
         },
         {
             id: '4',
-            img: ourIcon,
-            title: 'Network Solutions',
+            img: repairsolution,
+            title: 'Rental Printer Repair and Support Services',
             desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
-        },
-        {
-            id: '5',
-            img: ourIcon,
-            title: 'Network Solutions',
-            desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
-        },
-        {
-            id: '6',
-            img: ourIcon,
-            title: 'Network Solutions',
-            desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
-        },
-        {
-            id: '7',
-            img: ourIcon,
-            title: 'Network Solutions',
-            desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
-        },
-        {
-            id: '8',
-            img: ourIcon,
-            title: 'Network Solutions',
-            desc: 'We offer a wide range of web development services to help businesses and individuals create and maintain their websites.'
-        },
+        }
     ]
     return (
         <div className='container mt-5'>
@@ -78,7 +59,7 @@ const Ourservices = () => {
                                     <div className="card p-3 position-relative">
                                         <div className='imgserviceslap'></div>
                                         <div className="card-body" >
-                                            <img src={ourIcon} alt="Network Solutions" />
+                                            <img src={item.img} alt="Network Solutions" />
                                             <h5 className="card-title text-white">{item.title}</h5>
                                             <p className="card-text text-white">{item.desc}</p>
                                         </div>

@@ -339,15 +339,18 @@ body {
       img {
         width: 60px;
         height: 60px;
-        border-radius: 50px;
+        // border-radius: 50px;
         transform: translate(65px, 80px);
         transition: 0.5s all ease-in-out;
         margin-bottom: 10px;
       }
       .card-title {
-        font-size: 1.5rem;
+        font-size: 1rem;
         transform: translateY(85px);
         transition: 0.5s all ease-in-out;
+      }
+      .card-text{
+        font-size: 0.85rem;
       }
     }
     &:hover {
