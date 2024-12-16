@@ -1,8 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
 import { Helmet } from 'react-helmet';
 import { toast, ToastContainer } from 'react-toastify';
+import hiringImg from '../assets/images/hiring-img.jpg';
+import Marquee from '../component/Marquee';
+import { BeatLoader } from 'react-spinners';
 
 const Career = () => {
   const [firstName, setFirstName] = useState('');
@@ -11,6 +14,7 @@ const Career = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [file, setFile] = useState(null);
+  const [loader, setLoader] = useState(false)
 
   const fileInputRef = useRef(null);
 
@@ -34,7 +38,8 @@ const Career = () => {
   const handleSubmit = () => {
     if (!firstName.trim()) {
       toast.error('Please enter your first name');
-    } else if (!lastName.trim()) {
+    }
+    else if (!lastName.trim()) {
       toast.error('Please enter your last name');
     } else if (!email.trim()) {
       toast.error('Please enter your email');
@@ -50,15 +55,20 @@ const Career = () => {
       toast.error('Please upload a file');
     }
     else {
-      toast.success('Form submitted successfully!');
-      setFirstName('');
-      setLastName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-      if (fileInputRef.current) {
-        fileInputRef.current.value = '';
-      }
+      setLoader(true)
+      setTimeout(() => {
+        toast.success('Form submitted successfully');
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        setFile(null);
+        setLoader(false)
+        if (fileInputRef.current) {
+          fileInputRef.current.value = '';
+        }
+      }, 1500);
     }
   };
 
@@ -78,11 +88,12 @@ const Career = () => {
             <h2 className="fs-5 mb-0 text-center">We are Hiring</h2>
           </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-4">
           <div className="col-md-6">
-            {/* Placeholder for additional content */}
+            <img style={{ width: "100%", height: 'auto' }} className='rounded' src={hiringImg} alt="We are Hiring" />
           </div>
           <div className="col-md-6">
+            <Marquee text="Looking For Sales Marketing, Edu:- MBA" />
             <h3 className="fs-6 mb-3 fw-normal">Drop Your Details</h3>
             <form>
               <div className="row">
@@ -182,15 +193,18 @@ const Career = () => {
                       Upload Your CV <span className="text-danger">*</span>
                     </label>
                   </div>
+                  <div style={{ fontSize: '0.65rem' }} className='mt-2 fst-italic text-danger'>
+                    File size should not exceed 2MB & Only PDF, DOC, or DOCX files are allowed
+                  </div>
                 </div>
               </div>
               <div className="d-flex justify-content-center mt-3">
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="btn btn-primary"
+                  className={`btn btn-outline-primary rounded-pill px-3 ${loader == true ? 'd-flex align-items-center' : ''}`}
                 >
-                  Submit
+                  Submit {loader ? <BeatLoader className='ms-1' size="8" speedMultiplier="0.5" color="#0d6efd" /> : null}
                 </button>
               </div>
             </form>
