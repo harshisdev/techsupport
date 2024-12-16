@@ -525,3 +525,30 @@ body {
     margin-bottom: 0px;
   }
 }
+.input-form {
+  position: relative;
+  .form-label {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    margin-bottom: 0px;
+    font-size: 0.825rem;
+    transition: 0.3s all ease-in-out;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #bbb8b8;
+    ~ .form-label {
+      top: -8px;
+      background-color: $white;
+      font-size: 0.75rem;
+      transition: 0.3s all ease-in-out;
+    }
+  }
+  .form-label-selected {
+    top: -8px;
+    background-color: $white;
+    font-size: 0.75rem;
+    transition: 0.3s all ease-in-out;
+  }
+}

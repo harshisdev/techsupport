@@ -34,7 +34,7 @@ const Techindex = () => {
             </div>
             <div className="row mt-4">
                 <div className="col-6 d-flex align-items-center">
-                    <img data-aos="fade-right" style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={technologyIndeximg} alt="Technology Index" />
+                    <img data-aos="fade-up" style={{ width: '100%', height: "auto", borderRadius: '10px' }} src={technologyIndeximg} alt="Technology Index" />
                 </div>
                 <div className="col-6 align-items-center d-flex">
                     <div data-aos="fade-left">
