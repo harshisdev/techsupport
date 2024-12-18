@@ -153,6 +153,8 @@ const Career = () => {
                           setPhone(value);
                         }
                       }}
+                      inputMode="numeric"
+                      pattern="[0-9]*"
                       className="form-control"
                       id="phone"
                       autoComplete="off"
