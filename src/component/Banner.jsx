@@ -97,8 +97,8 @@ const Banner = () => {
                             <div className={`slider-content text-white ${isAnimating ? "animate" : ""}`}>
                                 <h1 className="title">{bannerContent[activeSlide]?.title || bannerContent[0].title}</h1>
                                 <p className={`description ${expanded ? "d-block" : ""} `}>{bannerContent[activeSlide]?.description || bannerContent[0].description}</p>
-                                <a onClick={ReadMore} className="cursor-pointer text-primary fs-custom">
-                                    {expanded ? " Show Less" : " Read More"}
+                              <a href="#" role="button" onClick={ReadMore} className="cursor-pointer text-primary fs-custom">
+                                  {expanded ? " Show Less" : " Read More"}
                                 </a>
                             </div>
                         </div>
